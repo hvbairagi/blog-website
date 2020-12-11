@@ -1,14 +1,17 @@
 .post-container {
   margin: 0 200px;
+  text-decoration: none;
 }
 
 .post-title {
   margin: 0 20px;
   padding: 10px;
+  text-decoration: none;
   /* background-color: #00988d; */
 }
 
 .post {
+  text-decoration: none;
   font-size: 1.25rem;
   margin-bottom: 30px;
   border-bottom: 1px solid #ccc;
@@ -20,4 +23,9 @@
 .link {
   color: black;
   text-decoration: none;
+}
+
+.navlink {
+  text-decoration: none;
+  color: inherit;
 }

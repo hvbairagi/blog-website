@@ -13,21 +13,24 @@ function PostDetail(props) {
   return (
     <div>
       <Header />
-
+      {/* This is the post section which will contain the post details */}
+      {/* Did not found Author for each post so assigning same author to all the posts */}
       <div className="post">
-        <h2>{post.title}</h2>
-        <p>{post.body}</p>
-        <h4>Posted by:</h4>
-        <p>{AuthorData.name}</p>
-        <p>{AuthorData.username}</p>
+        <h2 className="post-title">{post.title}</h2>
+        <p className="post-body">{post.body}</p>
+        <h4 className="quote-one">
+          Posted by: {AuthorData.name} {AuthorData.username}
+        </h4>
       </div>
+      {/* This is the comments section which will contain all the comments */}
       {/* Did not found comments for each post so adding the same comments for every post */}
-      <h4>Comments</h4>
+      <h4 className="topic">Comments</h4>
+      {/* Used Map function to map all the comments from the array */}
       {CommentsData.map((comment) => {
         return (
           <div key={comment.id} className="comment">
-            <p>-{comment.name}</p>
-            <p>--{comment.body}</p>
+            <h5>{comment.name}</h5>
+            <p>{comment.body}</p>
             <p>
               <h5 class="quote">Commented by: {comment.email}</h5>
             </p>
