@@ -1,0 +1,15 @@
+.post {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 3px 3px 6px 5px #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.comment {
+  margin: 20px;
+}
+
+.quote {
+  color: #ccc;
+}
